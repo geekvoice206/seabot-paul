@@ -20,6 +20,10 @@ export default class InMemoryDbConnector<
     return this._memoryStore.find((x) => x.id === itemId);
   }
 
+  async listAll() {
+    return [...this._memoryStore];
+  }
+
   async deleteItem(itemId: string) {
     const index = this._memoryStore.findIndex((x) => x.id === itemId);
     if (index === -1) {

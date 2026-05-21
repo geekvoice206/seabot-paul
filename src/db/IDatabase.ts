@@ -7,6 +7,8 @@ export default interface IDatabase<T> {
 
   getItem: (itemId: string) => Promise<T | undefined>;
 
+  listAll: () => Promise<Array<T>>;
+
   deleteItem: (itemId: string) => Promise<T | undefined>;
 
   getLastItem: () => Promise<T | undefined>;

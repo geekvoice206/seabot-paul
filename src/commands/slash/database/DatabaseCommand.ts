@@ -8,7 +8,7 @@ import SlashCommand, { SlashCommandConfiguration } from "../SlashCommand";
 import { cosmosClient } from "../../../db/cosmosClient";
 import { Database } from "../../../utils/constants";
 
-type ConnectorType = "Incidents";
+type ConnectorType = "Incidents" | "Warnings";
 
 export class DatabaseCommand<
   ModelType extends ItemDefinition,

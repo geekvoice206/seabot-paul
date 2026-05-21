@@ -5,6 +5,7 @@ export module Database {
   export const DATABASE_ID = "seabot";
   export module Containers {
     export const INCIDENTS = "Incidents";
+    export const WARNINGS = "Warnings";
   }
   export module Queries {
     // Add incident queries here when needed

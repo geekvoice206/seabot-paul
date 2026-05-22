@@ -53,7 +53,8 @@ export default new SlashCommand({
       const oldName = guildChannel.name;
       await guildChannel.setName(newName);
       await interaction.editReply(
-        `renamed \`${oldName}\` to \`${newName}\`.`,
+        `<${interaction.user.id}> renamed \`${oldName}\` to \`${newName}\`.`,
+       // `renamed \`${oldName}\` to \`${newName}\`.`,
       );      
     } catch (e: any) {
       if (e instanceof DiscordAPIError) {

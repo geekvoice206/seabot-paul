@@ -9,6 +9,7 @@ import SlashCommand from "../SlashCommand";
 
 const RENAMEABLE_CHANNELS: string[] = [
   "370945003566006274",
+  "769064225263714316",
 ];
 
 export default new SlashCommand({

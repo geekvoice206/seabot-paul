@@ -2,7 +2,6 @@ import {
   ChatInputCommandInteraction,
   DiscordAPIError,
   GuildChannel,
-  MessageFlags,
 } from "discord.js";
 import { ChatInputCommandBuilder } from "@discordjs/builders";
 import SlashCommand from "../SlashCommand";
@@ -35,7 +34,7 @@ export default new SlashCommand({
           .setRequired(true),
     ]),
   execute: async (interaction: ChatInputCommandInteraction) => {
-    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
+    await interaction.deferReply();
     const { options } = interaction;
     const channel = options.getChannel("channel", true);
     const newName = options.getString("new-name", true);
@@ -54,7 +53,7 @@ export default new SlashCommand({
       const oldName = guildChannel.name;
       await guildChannel.setName(newName);
       await interaction.editReply(
-        `${interaction.user.displayName} renamed \`${oldName}\` to \`${newName}\`.`,
+        `renamed \`${oldName}\` to \`${newName}\`.`,
       );      
     } catch (e: any) {
       if (e instanceof DiscordAPIError) {

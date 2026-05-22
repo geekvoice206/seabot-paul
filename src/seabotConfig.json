@@ -1,30 +1,30 @@
 {
   "roleIds": {
-    "moderator": "370946173902520342",
-    "everyone": "370945003566006272",
+    "moderator": "1027356651134664775",
+    "everyone": "769064225263714314",
     "premium": "1040844355667251211"
   },
   "userVoiceChannels": {
-    "triggerChannelId": "788552426906845185",
+    "triggerChannelId": "769064225263714320",
     "groupId": "788552301182320640"
   },
   "autoDeleteMessages": {
     "channels": [
       {
-        "targetId": "804639001226379294",
+        "targetId": "1502343737487917217",
         "timeBeforeClearing": {
-          "hours": 1
+          "hours": 6
         },
         "numberOfMessages": 10
       }
     ]
   },
   "channelIds": {
-    "DEBUG": "541322708844281867",
-    "MOD_LOG": "634526832816816128",
-    "MOD_REPORTS": "1003017032364728330",
+    "DEBUG": "1415400129539870840",
+    "MOD_LOG": "1507069322420420690",
+    "MOD_REPORTS": "1260089386108977163",
     "RANT": "788552426906845185",
-    "USER_VOICE_GROUP": "788552301182320640"
+    "USER_VOICE_GROUP": "769064225263714320"
   },
   "telemetryCategories": [
     "370945003566006273",

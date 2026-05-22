@@ -98,8 +98,8 @@ function forecastMiniRoast(tempF: number, description: string): string {
 
 export default new SlashCommand({
   description: "Get weather & 24hr forecast with zero chill",
-  help: "snarkycast [98102]",
-  name: "snarkycast",
+  help: "fw [98102]",
+  name: "fw",
   builder: new ChatInputCommandBuilder().addNumberOptions([
     (option) =>
       option
